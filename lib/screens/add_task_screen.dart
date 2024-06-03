@@ -4,14 +4,13 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:task_manager/models/task_model.dart';
-import 'package:task_manager/screens/task_list_screen.dart';
 import 'package:task_manager/utils/file_storage.dart';
 import 'dart:async';
 
 class AddTaskScreen extends StatefulWidget {
   final Function(TaskModel) onTaskAdded;
 
-  const AddTaskScreen({Key? key, required this.onTaskAdded}) : super(key: key);
+  const AddTaskScreen({super.key, required this.onTaskAdded});
 
   @override
   _AddTaskScreenState createState() => _AddTaskScreenState();

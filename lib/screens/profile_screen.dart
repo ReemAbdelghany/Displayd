@@ -53,7 +53,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
     progressDialog.show();
     try {
-      var fileName = DateTime.now().millisecondsSinceEpoch.toString() + '.jpg';
+      var fileName = '${DateTime.now().millisecondsSinceEpoch}.jpg';
 
       UploadTask uploadTask = FirebaseStorage.instance.ref().child('profile_images').child(fileName).putFile(imageFile!);
 

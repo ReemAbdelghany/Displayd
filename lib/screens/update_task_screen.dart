@@ -5,7 +5,7 @@ class UpdateTaskScreen extends StatefulWidget {
   final TaskModel task; // The task to be updated
   final Function(TaskModel) onTaskUpdated; // Callback function to notify the parent widget
 
-  const UpdateTaskScreen({Key? key, required this.task, required this.onTaskUpdated}) : super(key: key);
+  const UpdateTaskScreen({super.key, required this.task, required this.onTaskUpdated});
 
   @override
   State<UpdateTaskScreen> createState() => _UpdateTaskScreenState();

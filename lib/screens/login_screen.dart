@@ -3,11 +3,11 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:task_manager/screens/admin_view_screen.dart';
+import 'package:task_manager/screens/camera_drawing_screen.dart'; // Import camera_drawing_screen.dart
 import 'package:task_manager/screens/signup_screen.dart';
-import 'package:task_manager/screens/task_list_screen.dart';
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+  const LoginScreen({super.key});
 
   @override
   _LoginScreenState createState() => _LoginScreenState();
@@ -64,8 +64,9 @@ class _LoginScreenState extends State<LoginScreen> {
                         return const AdminUserListScreen(); // Navigate to admin user list screen
                       }));
                     } else {
+                      // Navigate to camera_drawing_screen.dart
                       Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) {
-                        return const TaskListScreen();
+                        return const CameraDrawingScreen();
                       }));
                     }
                   }
