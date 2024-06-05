@@ -35,7 +35,7 @@ class _LoginScreenState extends State<LoginScreen> {
               controller: passwordController,
               obscureText: true,
               decoration: const InputDecoration(
-                hintText: 'Password',
+              hintText: 'Password',
               ),
             ),
             const SizedBox(height: 10,),
